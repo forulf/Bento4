@@ -239,7 +239,7 @@ main(int argc, char** argv)
         
     // by default, try a standard decrypting processor
     if (processor == NULL) {
-        processor = new AP4_StandardDecryptingProcessor(&key_map);
+        processor = new AP4_CencDecryptingProcessor(&key_map);
     }
     
     delete input_file;
